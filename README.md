@@ -8,7 +8,7 @@ Este proyecto fue desarrollado como parte de la asignatura de Tecnología de Apl
 A pesar de que no tengo tiempo actualmente para realizar todas las mejoras necesarias, este proyecto fue clave en mi desarrollo profesional, permitiéndome aprender a trabajar en equipo, crear aplicaciones web complejas desde cero y adaptarme a nuevas tecnologías.
 
 ## **Foto de la Página de Inicio**
-![Página de Inicio](static/img/inicio.png)
+![Página de Inicio](../static/img/inicio.png)
 
 ## **Características Principales**
 
@@ -34,10 +34,6 @@ He preparado varios videos donde se muestra el funcionamiento de la aplicación 
 - **Registro como Cliente**: [Ver video](https://www.youtube.com/watch?v=oK6D81Bj8uU&ab_channel=PabloPardoDev)
 - **Solicitud de Trabajo como Entrenador**: [Ver video](https://www.youtube.com/watch?v=f3y_uaFCrRo&ab_channel=PabloPardoDev)
 - **Uso como Administrador**: [Ver video](https://www.youtube.com/watch?v=oIAWd9KiqXw&ab_channel=PabloPardoDev)
-
-- **Interfaz de Usuario**:
-  - Interfaz basada en JSP (JavaServer Pages) que facilita la visualización dinámica de contenido.
-  - Páginas adaptadas para los diferentes roles con funcionalidades específicas.
 
 ## **Tecnologías Utilizadas**
 
