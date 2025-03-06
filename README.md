@@ -8,7 +8,7 @@ Este proyecto fue desarrollado como parte de la asignatura de Tecnología de Apl
 A pesar de que no tengo tiempo actualmente para realizar todas las mejoras necesarias, este proyecto fue clave en mi desarrollo profesional, permitiéndome aprender a trabajar en equipo, crear aplicaciones web complejas desde cero y adaptarme a nuevas tecnologías.
 
 ## **Foto de la Página de Inicio**
-![Página de Inicio](../static/img/inicio.png)
+![Página de Inicio](ProyectoTrainingGym/src/main/resources/static/img/inicio.png)
 
 ## **Características Principales**
 
