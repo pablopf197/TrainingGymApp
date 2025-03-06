@@ -1,0 +1,197 @@
+/* Enlaces estilizados */
+.session-link {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.session-link:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Contenedor con tamaño fijo y barra de desplazamiento */
+.sesiones {
+    background: linear-gradient(#B10028, #D55005);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    width: auto; /* Ancho fijo */
+     /* Alto fijo */
+    overflow-y: auto; /* Añadir barra de desplazamiento vertical */
+    overflow-x: hidden; /* Ocultar barra de desplazamiento horizontal */
+}
+
+.session {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between; /* Distribuir el espacio entre el link y el checkbox */
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2); /* Mismo color de fondo que los enlaces */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    width: 27px;
+    height: 27px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 20px;
+}
+
+.custom-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 27px;
+    width: 27px;
+    background-color: rgba(255, 255, 255, 0.2); /* Mismo color de fondo que los enlaces */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #ffffff; /* Mismo color de fondo que los enlaces cuando se hace hover */
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 8px;
+    height: 16px;
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Restablecer otros estilos */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    flex: 0.8;
+    margin-left: 60px;
+}
+
+.enlaces {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.enlaces li {
+    margin-left: 90px;
+}
+
+.enlaces li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.enlaces li a:hover {
+    color: #E5670B;
+}
+
+.enlaces li a.cerrar-sesion {
+    background: #E5670B;
+    padding: 5px 11px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.enlaces li a.cerrar-sesion:hover {
+    background: #D4560A;
+}
+
+#activo {
+    text-decoration: underline;
+}
+
+.imagen-fondo {
+    background-image: url("/img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 61px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.capa-gris {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color grisáceo con transparencia */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    top: 15%;
+    left: 10%;
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.cancel-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.cancel-button {
+    background-color: #cccccc;
+    color: black;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.cancel-button:hover {
+    background-color: #aaaaaa;
+}

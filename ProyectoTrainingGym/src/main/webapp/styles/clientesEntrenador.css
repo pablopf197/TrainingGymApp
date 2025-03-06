@@ -1,0 +1,218 @@
+body {
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.logo {
+    flex: 0.8;
+    margin-left: 60px;
+}
+
+.enlaces {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.enlaces li {
+    margin-left: 90px;
+}
+.enlaces li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.enlaces li a:hover{
+    color: #E5670B;
+}
+.enlaces li a.cerrar-sesion{
+    background: #E5670B;
+    padding: 5px 11px;
+    border-radius: 5px;
+    color: #fff;
+}
+.enlaces li a.cerrar-sesion:hover{
+    background: #D4560A;
+}
+#activo{
+    text-decoration: underline;
+}
+
+.imagen-fondo {
+    background-image: url("/img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 61px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.capa-gris {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color grisáceo con transparencia */
+}
+.contenedor-cliente-titulo{
+    width: 85%;
+    height: 70%;
+    position: fixed;
+    top: 15%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+.contenedor-cliente-titulo h1{
+    color: #fff
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-radius: 18px;
+    width: 100%;
+    overflow: hidden
+}
+.tabla{
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.filtro-container {
+    width: 20%;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-top: 65px;
+}
+
+.filtro-container p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filtro-container .entrada {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.select{
+    padding: 12px;
+    border-radius: 15px;
+    border-color: rgb(255, 122, 0);
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 3px 3px 3px rgba(255, 122, 0, 0.6);
+    background-color: #fffdfd;
+    color: rgb(255, 122, 0);
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.select:focus-visible{
+    outline: none;
+}
+
+.filtro-container .filtrar {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.filtro-container .filtrar:hover {
+    background: linear-gradient(#A00017, #C44004);
+}
+.filtrar {
+    background: linear-gradient(#B10028, #D55005);
+    display: flex;
+    justify-content: center;
+    padding: 7px 12px;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: none;
+    border: none;
+    font-size: 1.1em;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+table td{
+    text-align: center;
+    background: #fff;
+
+}
+.btn-cliente{
+    margin: 0;
+}
+.btn-cliente button{
+    margin: 0; /* Añade un margen a los botones */
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    vertical-align: middle;
+    color: #fff;
+}
+
+.btn-cliente button:hover{
+    background:linear-gradient(#A00017, #C44004);
+}
+
+.tabla-filtro-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    width: 100%;
+    max-width: 1000px; /* Ancho máximo */
+    margin-top: 20px; /* Añadir margen superior */
+    margin-bottom: 20px; /* Añadir margen inferior */
+}

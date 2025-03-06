@@ -1,0 +1,138 @@
+body {
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.logo {
+    flex: 0.8;
+    margin-left: 60px;
+}
+
+.enlaces {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.enlaces li {
+    margin-left: 90px;
+}
+.enlaces li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.enlaces li a:hover{
+    color: #E5670B;
+}
+.enlaces li a.acceso{
+    background: #E5670B;
+    padding: 5px 11px;
+    border-radius: 5px;
+    color: #fff;
+}
+.enlaces li a.acceso:hover{
+    background: #D4560A;
+}
+
+
+.enlaces li:first-child {
+    margin-left: 0;
+}
+
+.imagen-fondo {
+    background-image: url("/img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 61px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.capa-gris {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color grisáceo con transparencia */
+}
+
+.contenido {
+    text-align: center;
+    position: relative;
+    background: #fff;
+    width: 30%;
+    height: fit-content;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 30px;
+
+}
+.contenido form.formulario {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenido form.formlario div {
+    margin-bottom: 15px;
+}
+
+.contenido form.formulario label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contenido form.formulario input[type="text"],
+.contenido form.formulario input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contenido form.formulario button[type="submit"] {
+    width: 70%;
+    padding: 10px;
+    background-color: #2B2B2B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contenido form.formulario button[type="submit"]:hover {
+    background-color: #000;
+}
+
+.contenido p {
+    margin-top: 15px;
+}
+h1{
+    color: #000;
+}
+#enlace-registrarse{
+    color: #E5670B;
+}
+#enlace-registrarse:hover{
+    color: #C34509;
+}
+#mensaje-error{
+    color: red;
+}

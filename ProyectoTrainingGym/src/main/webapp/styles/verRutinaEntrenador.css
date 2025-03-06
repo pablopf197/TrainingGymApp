@@ -1,0 +1,323 @@
+body {
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.logo {
+    flex: 0.8;
+    margin-left: 60px;
+}
+
+.enlaces {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.enlaces li {
+    margin-left: 90px;
+}
+.enlaces li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.enlaces li a:hover{
+    color: #E5670B;
+}
+.enlaces li a.cerrar-sesion{
+    background: #E5670B;
+    padding: 5px 11px;
+    border-radius: 5px;
+    color: #fff;
+}
+.enlaces li a.cerrar-sesion:hover{
+    background: #D4560A;
+}
+#activo{
+    text-decoration: underline;
+}
+
+.imagen-fondo {
+    background-image: url("/img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 61px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.capa-gris {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color grisáceo con transparencia */
+}
+.contenedor-rutina-titulo{
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contenedor-rutina-titulo h1{
+    color: #fff
+}
+.contenido {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 5;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+#label-nombre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#label-objetivos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+form{
+    display: grid;
+}
+form input.nombre {
+    width: 50%;
+    margin-left: 10px;
+    padding: 10px;
+    background: #ddd;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+form textarea {
+    width: calc(50% + 85px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 18px;
+    font-weight: 600;
+    background: #ddd;
+}
+#div-sesiones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#div-sesiones > p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#lista-sesiones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+#div-sesiones p{
+    font-size: 20px;
+}
+.sesion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100%;
+    height: fit-content;
+}
+.sesion p{
+    display: inline-block;
+    margin: 0 10px 0 20px;
+}
+.nombre-sesion{
+    width: 20%;
+}
+input.intensidad{
+    width: 40px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #ddd;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.btn-ver-sesion{
+    margin: 0; /* Añade un margen a los botones */
+    font-size: 18px;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    vertical-align: middle;
+    color: #fff;
+}
+.btn-ver-sesion:hover {
+    background:linear-gradient(#A00017, #C44004);
+}
+
+.img-icono{
+    height: 75%;
+    width: auto;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.img-icono:hover{
+    transform: scale(1.1);
+}
+.contenedor-iconos{
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+
+}
+form input[type="submit"] {
+    justify-self: flex-end;
+    font-size: 18px;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    vertical-align: middle;
+    color: #fff;
+}
+
+form input[type="submit"]:hover {
+    background:linear-gradient(#A00017, #C44004);
+}
+#btn-add-sesion{
+    margin: 0; /* Añade un margen a los botones */
+    margin-bottom: -30px;
+    justify-self: flex-end;
+    font-size: 18px;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    vertical-align: middle;
+    color: #fff;
+    z-index: 5;
+}
+#btn-add-sesion:hover {
+    background:linear-gradient(#A00017, #C44004);
+}
+.modal {
+    display: none; /* Por defecto, oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 55%;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 55%;
+}
+.lista-sesiones-modal {
+    display: flex;
+    flex-direction: column;
+    max-height: 80%; /* Altura máxima */
+    overflow-y: auto; /* Mostrar barra de desplazamiento si es necesario */
+    scrollbar-width: thin;
+}
+
+.sesion-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+}
+.sesion-modal button{
+    margin: 0; /* Añade un margen a los botones */
+    font-size: 18px;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    vertical-align: middle;
+    color: #fff;
+}
+.sesion-modal button:hover {
+    background:linear-gradient(#A00017, #C44004);
+}
+.form-añadir-sesion{
+    margin: 0;
+}
+#input-añadir-sesion{
+    margin-right: 20px;
+    font-size: 18px;
+    padding: 7px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    vertical-align: middle;
+    color: #fff;
+    z-index: 5;
+}
+
+#input-añadir-sesion:hover {
+    background:linear-gradient(#A00017, #C44004);
+}

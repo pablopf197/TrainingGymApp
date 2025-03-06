@@ -1,0 +1,190 @@
+body {
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.logo {
+    flex: 0.8;
+    margin-left: 60px;
+}
+
+.enlaces {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.enlaces li {
+    margin-left: 90px;
+}
+.enlaces li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.enlaces li a:hover{
+    color: #E5670B;
+}
+.enlaces li a.cerrar-sesion{
+    background: #E5670B;
+    padding: 5px 11px;
+    border-radius: 5px;
+    color: #fff;
+}
+.enlaces li a.cerrar-sesion:hover{
+    background: #D4560A;
+}
+#activo{
+    text-decoration: underline;
+}
+
+.imagen-fondo {
+    background-image: url("/img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 61px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.capa-gris {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    padding: 0 40px;
+}
+
+.contenedor-crear-rutina {
+    width: 65%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contenedor-rutinas {
+    width: 100%;
+    background-color: #fff;
+    z-index: 5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Ancho del scrollbar */
+    scrollbar-color: #aaa transparent;
+}
+
+.crear-rutina {
+    font-size: 18px;
+    padding: 7px 12px; /* Espacio dentro del botón */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.rutina-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinear verticalmente */
+    border-bottom: 1px solid #ccc; /* Línea separadora */
+}
+
+.rutina-nombre {
+    flex-grow: 1; /* El nombre ocupa todo el espacio restante */
+    font-size: 18px;
+    margin-left: 10px; /* Espacio entre el nombre y los botones */
+    margin-right: 10px;
+}
+
+.ver-rutina, .borrar-rutina {
+    margin-right: 25px; /* Espacio entre los botones */
+    font-size: 15px;
+    padding: 5px 10px; /* Espacio dentro del botón */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    color: #fff;
+}
+
+.filtro {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 5;
+    height: fit-content;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 115px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada, .filtrar {
+    margin:  0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.filtrar.crear-rutina {
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.filtro p {
+    font-weight: bold;
+}
+
+.btn button{
+    margin: 0; /* Añade un margen a los botones */
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(#B10028, #D55005);
+    vertical-align: middle;
+    color: #fff;
+}
+
+.contenedor-principal button:hover, input[type=submit]:hover{
+    background:linear-gradient(#A00017, #C44004) !important;
+}
+
